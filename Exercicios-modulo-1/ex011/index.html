@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tenta abri esse site em varios dispositivos diferente</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexicel">
+    </picture>
+    <h1>reproduzir audio</h1>
+    <p>vamor aprender a repodruzir audio em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/musica.mp3"type="audio/mpeg">
+        <p>se nao funcionar, tenta abaixa o arquivo <a href="midia/musica.mp3">aqui</a></p>
+    </audio>
+    <h1>Reproduzindo vidio</h1>
+    <p>vamos aprender a repodruzir vidio em HTML5</p>
+</body>
+</html>

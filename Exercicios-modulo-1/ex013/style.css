@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(255, 254, 206);
+    font-family: Arial, sans-serif; /* Adicionando uma fonte genérica como fallback */
+}
+
+h1 {
+    color: rgb(204, 26, 26); /* Removido estilo inline do HTML */
+    text-decoration: underline;
+}
+
+h2 {
+    color: rgb(150, 0, 0);
+    background-color: rgb(224, 174, 65);
+}
+
+h3 {
+    color: rgb(150, 0, 0);
+}
+
+p {
+    text-align: justify;
+    color: rgb(100, 0, 0);
+}
+
+a {
+    color: darkblue; /* Adicionando estilo para links */
+    text-decoration: underline; /* Adicionando sublinhado aos links */
+}
+
+a:hover {
+    color: blue; /* Mudança de cor ao passar o mouse */
+}
+a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: 600;
+}
+
