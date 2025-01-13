@@ -1,0 +1,1 @@
+so qual quer connection_status
