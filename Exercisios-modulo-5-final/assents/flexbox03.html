@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Direction no Flexbox</title>
+    <style>
+        body {
+            background-color: #d4d4d4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #e6f7f7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .item {
+            background-color: rgb(50, 55, 176);
+            border: 1px solid rgba(0, 0, 0, 0.326);
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            width: 100px;
+            margin: 5px;
+        }
+        
+        /* Flex-direction exemplos */
+        .flex-row { flex-direction: row; }
+        .flex-row-reverse { flex-direction: row-reverse; }
+        .flex-column { flex-direction: column; }
+        .flex-column-reverse { flex-direction: column-reverse; }
+    </style>
+</head>
+<body>
+    <h1>O que é flex-direction?</h1>
+    <p>A propriedade <strong>flex-direction</strong> define a direção dos itens no contêiner flexível.</p>
+    
+    <h2>flex-direction: row</h2>
+    <div class="container flex-row">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens ficam dispostos na linha principal (horizontal).</p>
+    
+    <h2>flex-direction: row-reverse</h2>
+    <div class="container flex-row-reverse">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens ficam dispostos na linha principal (horizontal) na ordem inversa.</p>
+    
+    <h2>flex-direction: column</h2>
+    <div class="container flex-column">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens ficam dispostos na coluna (vertical).</p>
+    
+    <h2>flex-direction: column-reverse</h2>
+    <div class="container flex-column-reverse">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens ficam dispostos na coluna (vertical) na ordem inversa.</p>
+</body>
+</html>

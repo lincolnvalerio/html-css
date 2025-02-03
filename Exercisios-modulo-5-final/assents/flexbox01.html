@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    background-color: #d4d4d4; /* fundo suave, menos agressivo */
+    font-family: Arial, sans-serif;
+    color: #333; /* texto em cinza escuro para boa legibilidade */
+}
+
+h1 {
+    color: #005f6b; /* título com um tom de azul calmo */
+    text-align: center;
+}
+
+p {
+    color: #444; /* texto do parágrafo um pouco mais suave que o título */
+    font-size: 1.1em;
+    line-height: 1.6; /* aumenta o espaçamento entre as linhas para facilitar a leitura */
+    max-width: 800px; /* garante que o texto não fique muito largo na tela */
+    margin: 20px auto; /* centraliza o parágrafo */
+}
+
+.conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* centra os itens */
+    background-color: #e6f7f7; /* fundo suave para o contêiner */
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px; /* espaço entre os itens */
+}
+
+.item {
+    background-color: #212cff; /* fundo de cada item em azul */
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    min-width: 150px; /* garante que os itens não fiquem muito pequenos */
+    flex: 1 1 200px; /* garante que os itens ocupem uma quantidade mínima de espaço, mas ainda sejam flexíveis */
+    box-sizing: border-box; /* inclui padding e borda no cálculo de largura */
+}
+    </style>
+</head>
+<body>
+    <h1>Entendendo o Flex-wrap</h1>
+    <p>
+        A propriedade <code>flex-wrap</code> é usada em contêineres com <code>display: flex</code> para controlar o comportamento dos itens quando o espaço disponível é insuficiente. 
+        Ao usar o valor <code>wrap</code>, os itens se reorganizam automaticamente em várias linhas, em vez de ultrapassarem o limite do contêiner. Isso torna o layout mais flexível e adaptável, principalmente em telas menores ou com muitos itens.
+    </p>
+    <div class="conteiner">
+        <h1 class="item">bloxo de teste</h1>
+        <h1 class="item">bloxo de teste</h1>
+        <h1 class="item">bloxo de teste</h1>
+        <h1 class="item">bloxo de teste</h1>
+        <h1 class="item">bloxo de teste</h1>
+        <h1 class="item">bloxo de teste</h1>
+        <h1 class="item">bloxo de teste</h1>
+        <h1 class="item">bloxo de teste</h1>
+        <h1 class="item">bloxo de teste</h1>
+    </div>
+</body>
+</html>

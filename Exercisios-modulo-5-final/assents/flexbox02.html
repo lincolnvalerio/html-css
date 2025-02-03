@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-Content no Flexbox</title>
+    <style>
+        body {
+            background-color:#d4d4d4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #e6f7f7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .item {
+            background-color: rgb(50, 55, 176);
+            border: 1px solid rgba(0, 0, 0, 0.326);
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            width: 100px;
+            margin: 5px;
+        }
+        
+        /* Justify-content exemplos */
+        .justify-start { justify-content: flex-start; }
+        .justify-center { justify-content: center; }
+        .justify-end { justify-content: flex-end; }
+        .justify-space-between { justify-content: space-between; }
+        .justify-space-around { justify-content: space-around; }
+        .justify-space-evenly { justify-content: space-evenly; }
+    </style>
+</head>
+<body>
+    <h1>O que é justify-content?</h1>
+    <p>A propriedade <strong>justify-content</strong> define como os elementos flexíveis são distribuídos ao longo do eixo principal.</p>
+    
+    <h2>justify-content: flex-start</h2>
+    <div class="container justify-start">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens ficam alinhados no início do contêiner.</p>
+    
+    <h2>justify-content: center</h2>
+    <div class="container justify-center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens são centralizados.</p>
+    
+    <h2>justify-content: flex-end</h2>
+    <div class="container justify-end">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens são alinhados ao final do contêiner.</p>
+    
+    <h2>justify-content: space-between</h2>
+    <div class="container justify-space-between">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens são distribuídos com o máximo de espaço possível entre eles.</p>
+    
+    <h2>justify-content: space-around</h2>
+    <div class="container justify-space-around">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens têm espaços iguais ao redor deles.</p>
+    
+    <h2>justify-content: space-evenly</h2>
+    <div class="container justify-space-evenly">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens são distribuídos igualmente dentro do contêiner.</p>
+</body>
+</html>

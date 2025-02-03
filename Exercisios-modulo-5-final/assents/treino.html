@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino Flexbox</title>
+    <style>
+        body {
+            background-color: #d4d4d4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            background-color: #e6f7f7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            height: 500px;
+            flex-flow: row nowrap;
+            overflow-x: auto;
+            align-items: center;
+        }
+        .item {
+            background-color: rgb(50, 55, 176);
+            border: 1px solid rgba(0, 0, 0, 0.326);
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            padding: 20px;
+            margin: 5px;
+        }
+        #n1{
+            align-self: stretch;
+        }
+        #n2{
+            align-self: flex-start;
+            
+        }
+        #n3{
+            align-self: flex-end;
+        }
+        #n4{
+            align-self: flex-end; 
+            margin-bottom: 80px; 
+}
+        #n5{
+            align-self: flex-end; 
+            margin-bottom: 80px; 
+}
+        #n6{
+            align-self: flex-end;
+            margin-bottom: 155px;
+}       
+        #n7{
+            align-self: flex-start;
+}        #n8{
+            align-self: flex-start;
+            margin-bottom: 155px;
+}        #n9{
+            align-self: flex-end;
+            margin-bottom: 155px;
+}        #n10{
+            align-self: flex-end;
+            margin-bottom: 155px;
+}        #n11{
+            align-self: flex-end;
+}        #n12{
+            align-self: flex-end;
+}        #n13{
+            align-self: flex-end;
+            margin-bottom: 80Px;
+}        #n14{
+            align-self: self-start;
+            margin-top: 200px;
+}        #n15{
+            align-self: flex-end;
+            margin-bottom: 155px;
+}       
+        #n16{
+            align-self: flex-end;
+            margin-bottom: 155px;
+}
+        #n17{
+            align-self: stretch;
+            margin-bottom: 155px;
+}
+
+    </style>
+</head>
+<body>
+
+    <div class="container" id="treino">
+        <script>
+            for (let i = 1; i <= 50; i++) {
+                document.write(`<div class="item" id="n${i}">Item ${i}</div>`);
+            }
+        </script>
+    </div>
+
+</body>
+</html>

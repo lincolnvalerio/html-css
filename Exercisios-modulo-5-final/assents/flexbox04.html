@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify-Content e Align-Items no Flexbox</title>
+    <style>
+        body {
+            background-color: #d4d4d4;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #e6f7f7;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            height: 300px; /* Definindo altura para mostrar o alinhamento vertical */
+        }
+        .item {
+            background-color: rgb(50, 55, 176);
+            border: 1px solid rgba(0, 0, 0, 0.326);
+            color: white;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px;
+            width: 100px;
+            margin: 5px;
+        }
+        
+        /* Justify-content exemplos */
+        .justify-start { justify-content: flex-start; }
+        .justify-center { justify-content: center; }
+        .justify-end { justify-content: flex-end; }
+        .justify-space-between { justify-content: space-between; }
+        .justify-space-around { justify-content: space-around; }
+        .justify-space-evenly { justify-content: space-evenly; }
+
+        /* Align-items exemplos */
+        .align-start { align-items: flex-start; }
+        .align-center { align-items: center; }
+        .align-end { align-items: flex-end; }
+        .align-baseline { align-items: baseline; }
+        .align-stretch { align-items: stretch; }
+    </style>
+</head>
+<body>
+    <h1>Usando justify-content e align-items</h1>
+    <p>A propriedade <strong>justify-content</strong> define como os itens são distribuídos ao longo do eixo principal, e <strong>align-items</strong> define como os itens são alinhados ao longo do eixo transversal.</p>
+    
+    <h2>justify-content: flex-start e align-items: flex-start</h2>
+    <div class="container justify-start align-start">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens estão alinhados no início tanto no eixo principal quanto no eixo transversal.</p>
+    
+    <h2>justify-content: center e align-items: center</h2>
+    <div class="container justify-center align-center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens estão centralizados tanto no eixo principal quanto no eixo transversal.</p>
+    
+    <h2>justify-content: flex-end e align-items: flex-end</h2>
+    <div class="container justify-end align-end">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens estão alinhados ao final tanto no eixo principal quanto no eixo transversal.</p>
+    
+    <h2>justify-content: space-between e align-items: center</h2>
+    <div class="container justify-space-between align-center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens têm espaço igual entre eles no eixo principal e estão centralizados no eixo transversal.</p>
+    
+    <h2>justify-content: space-around e align-items: stretch</h2>
+    <div class="container justify-space-around align-stretch">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens têm espaço ao redor deles no eixo principal e são esticados ao longo do eixo transversal.</p>
+    
+    <h2>justify-content: space-evenly e align-items: baseline</h2>
+    <div class="container justify-space-evenly align-baseline">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+    <p>Os itens são distribuídos igualmente no eixo principal e alinhados pela linha de base no eixo transversal.</p>
+</body>
+</html>
